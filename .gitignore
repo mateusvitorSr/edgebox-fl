@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+server.log
+update.log
+
+# Banco e dados locais
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+
+# Arquivos gerados pelo sistema
+index.html
+dashboard.html
+autoencoder.html
+edgebox_latest.json
+edgebox_state.json
+edgebox_model_update.json
+edgebox_global_model.json
+edgebox_trained_model.json
+edgebox_autoencoder_latest.json
+edgebox_autoencoder_model.json
+edgebox_autoencoder_update.json
+
+# Arquivos antigos do AquaFL/demo
+dataset_NO-*.json
+modelo_global.json
+modelo_local_*.json
+resultado.json
+
+# Backups
+*.tar.gz
+*.zip
+*.bak*
+backup*/
+backups/
+
+# Ambiente
+.env
+venv/
+.venv/
+
+# Sistema
+.DS_Store

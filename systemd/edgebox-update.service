@@ -1,0 +1,14 @@
+[Unit]
+Description=EdgeBox FL Data Collector and Local Model
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/root/aqua-fl
+ExecStart=/root/aqua-fl/edgebox_loop.sh
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target

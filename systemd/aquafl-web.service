@@ -1,0 +1,13 @@
+[Unit]
+Description=AquaFL Web Dashboard
+After=network.target
+
+[Service]
+WorkingDirectory=/root/aqua-fl
+ExecStart=/usr/bin/python3 -m http.server 8080 --bind 0.0.0.0
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
